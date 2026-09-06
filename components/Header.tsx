@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           </div>
           <div className="flex items-center space-x-4">
              <a 
-                href="https://emokykla.lt/bendrosios-programos" 
+                href="https://emokykla.lt/bendrosios-programos/visos-bendrosios-programos" 
                 target="_blank" 
                 rel="noreferrer"
                 className="text-sm text-gray-500 hover:text-primary transition-colors flex items-center"
