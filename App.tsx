@@ -43,9 +43,10 @@ const App: React.FC = () => {
     try {
       const result = await generateLessonPlan(params);
       setLessonPlan(result);
-    } catch (err) {
-      setError("Nepavyko sugeneruoti pamokos plano. Patikrinkite API raktą arba bandykite vėliau.");
-      console.error(err);
+    } catch (err: any) {
+      const msg = err?.message || "Nepavyko sugeneruoti pamokos plano. Patikrinkite API raktą arba bandykite vėliau.";
+      setError(msg);
+      console.error("Generavimo klaida:", err);
     } finally {
       setIsLoading(false);
     }

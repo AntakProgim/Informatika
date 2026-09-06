@@ -1,5 +1,8 @@
 {
   "name": "Informatikos DI metodinė medžiaga",
   "description": "Išmanus informatikos pamokų planų ir medžiagos generatorius pagal Lietuvos bendrąsias programas.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
